@@ -23,5 +23,10 @@ Options:
   --timeout=TIMEOUT    set timeout defalut 1
 ```
 
-  
+
+
+- 另外
+
+
+  修改ssh_inter.py中的参数，可以直接运行该脚本连接ssh会话
   
