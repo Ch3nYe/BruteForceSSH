@@ -4,6 +4,7 @@ Brute Force SSH  &amp; Multithreading
 - windows和linux均可运行
 
 - 以上两个脚本在同一个文件夹下，并且当进入shell后，会在同文件夹下创建log.txt记录交互日志
+- 每次使用时，正确的username和passowrd会被记录在userkey.txt文件中
 
 - 用户名字典和密码字典默认路径是同一文件夹下的username_list.txt和username_list.txt
 
