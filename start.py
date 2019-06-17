@@ -41,6 +41,8 @@ def login(Ip, Port, Username, Password, timeout):
         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
         ssh.connect(Ip,port=Port,username=Username,password=Password,compress=True,timeout=timeout) # normally port = 22
         print('[+] password found! ---(username@passowrd) :',Username,'@',Password)
+        with open('./userkey.txt', 'a+') as f:
+            f.write(str(Ip)+':'+str(Port)+'  '+Username+'@'+Password+'\n')
         return ssh
     except:
         ssh.close()
